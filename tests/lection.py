@@ -42,3 +42,19 @@
 # print(a)
 
 # test
+
+# x = int(input("Число: "))
+# counter = 1
+# while counter != x+1:
+#     print(counter)
+#     counter=counter + 1
+
+# x = int(input("Число: "))
+# for x in range(1, x+1):
+#     print(x)
+
+x = int(input("Число: "))
+counter = 1
+while counter != x+1:
+    print(1 + counter)
+    counter=counter + 1
