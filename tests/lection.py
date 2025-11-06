@@ -1,6 +1,5 @@
 # Задание 1.
 # x = int(input("Число: "))
-
 # if x % 2 == 0:
 #     print("Even number")
 # else:
@@ -26,7 +25,6 @@
 # Задание 4.
 # x = int(input("Число_1: "))
 # y = int(input("Число_2: "))
-#
 # if x > y == 0:
 #     print("y")
 # else:
@@ -53,8 +51,19 @@
 # for x in range(1, x+1):
 #     print(x)
 
-x = int(input("Число: "))
-counter = 1
-while counter != x+1:
-    print(1 + counter)
-    counter=counter + 1
+# x = int(input("Число: "))
+# counter = 1
+# while counter != x+1:
+#     print(1 + counter)
+#     counter=counter + 1
+
+# x = int(input("Число_1: "))
+# y = int(input("Число_2: "))
+# counter = 1
+
+
+
+
+
+
+
