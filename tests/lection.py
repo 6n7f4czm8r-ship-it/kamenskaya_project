@@ -59,4 +59,3 @@
 
 # x = int(input("Число_1: "))
 # y = int(input("Число_2: "))
-# counter = 1
