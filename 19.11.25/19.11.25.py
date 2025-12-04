@@ -1,6 +1,4 @@
     #1
-# 1.1
-
 
 # 1.2.
 # text = input("Текст: ")
@@ -30,13 +28,19 @@
 # print(f"Знаков восклицания: {count}")
 
 #2
-numbers = input("Последовательность: ")
-numb_list = numbers.split(" ")
-num = input("Нужное число: ")
-count = 0
-for numb in numb_list:
-    if numb == num:
-        count +=1
-print(f"Счетчик: {count}")
+# numbers = input("Последовательность: ")
+# numb_list = numbers.split(" ")
+# num = input("Нужное число: ")
+# count = 0
+# for numb in numb_list:
+#     if numb == num:
+#         count +=1
+# print(f"Счетчик: {count}")
 
+#3
+# numbers = [1, 2, 3, 4, 5, 6]
+# rez = sum(numbers)
+# v = len(numbers)
+# a = rez / v
+# print(a)
 
