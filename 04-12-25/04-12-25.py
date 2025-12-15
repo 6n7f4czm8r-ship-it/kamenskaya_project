@@ -24,3 +24,37 @@
 # x = int(input("Число: "))
 # symb = "&"*x
 # print(symb)
+
+#1
+# x = int(input("Число: "))
+# for i in range (1,11):
+#     rez = x * i
+#     print (rez)
+
+#3
+x = 5
+# x = int(input("Число для поиска: "))
+# a = int(input("Начало диапазона: "))
+# b = int(input("Конец диапазона: "))
+a = 1
+b = 6
+num_in_list = False
+numbers = []
+# numbers_1 = [1, 2, 3, 4, 5, 6]
+for i in range (a, b+1):
+    numbers.append(i)
+    if x in numbers:
+        num_in_list = True
+if not num_in_list:
+    print("Числа нет")
+
+
+
+print(numbers)
+# for y in numbers:
+#     if x == y:
+
+
+
+
+
