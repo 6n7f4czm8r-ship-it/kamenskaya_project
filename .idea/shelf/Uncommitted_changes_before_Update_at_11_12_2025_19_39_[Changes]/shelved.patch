@@ -1,0 +1,26 @@
+Index: tests/lection.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Задание 1.\r\n# x = int(input(\"Число: \"))\r\n\r\n# if x % 2 == 0:\r\n#     print(\"Even number\")\r\n# else:\r\n#     print(\"Odd number\")\r\n\r\n# Задание 2.\r\n# x = int(input(\"Число: \"))\r\n#\r\n# if x % 7 == 0:\r\n#      print(\"Number is multiple 7\")\r\n# else:\r\n#      print(\"Number is not multiple 7\")\r\n\r\n# Задание 3.\r\n# x = int(input(\"Число_1: \"))\r\n# y = int(input(\"Число_2: \"))\r\n\r\n# if x > y == 0:\r\n#      print(\"x\")\r\n# else:\r\n#     print(\"y\")\r\n\r\n# Задание 4.\r\n# x = int(input(\"Число_1: \"))\r\n# y = int(input(\"Число_2: \"))\r\n#\r\n# if x > y == 0:\r\n#     print(\"y\")\r\n# else:\r\n#     print(\"x\")\r\n\r\n# a = 123456 % 10\r\n# print(a)\r\n\r\n# a = 123456 // 10 % 10\r\n# print(a)\r\n\r\n# a = 123456 % 10 // 2\r\n# print(a)\r\n\r\n# test\r\n\r\n# x = int(input(\"Число: \"))\r\n# counter = 1\r\n# while counter != x+1:\r\n#     print(counter)\r\n#     counter=counter + 1\r\n\r\n# x = int(input(\"Число: \"))\r\n# for x in range(1, x+1):\r\n#     print(x)\r\n\r\nx = int(input(\"Число: \"))\r\ncounter = 1\r\nwhile counter != x+1:\r\n    print(1 + counter)\r\n    counter=counter + 1
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/lection.py b/tests/lection.py
+--- a/tests/lection.py	(revision 06351ebd931754047be45c28a0282f7941da086e)
++++ b/tests/lection.py	(date 1765463987460)
+@@ -53,8 +53,8 @@
+ # for x in range(1, x+1):
+ #     print(x)
+ 
+-x = int(input("Число: "))
+-counter = 1
+-while counter != x+1:
+-    print(1 + counter)
+-    counter=counter + 1
+\ No newline at end of file
++# x = int(input("Число: "))
++# counter = 1
++# while counter != x+1:
++#     print(1 + counter)
++#     counter=counter + 1
+\ No newline at end of file
