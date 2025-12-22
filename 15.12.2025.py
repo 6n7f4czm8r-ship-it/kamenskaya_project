@@ -7,7 +7,7 @@
 #         continue
 #     print(num)
 # else: print("None")
-from itertools import count
+# from itertools import count
 
 # Задание 2
 # a = int(input("Введите число 1:"))
@@ -30,11 +30,19 @@ from itertools import count
 # print(counter)
 
 #3
-a = int(input("Введите число 1:"))
-b = int(input("Введите число 2:"))
-val = range(a, b+1)
-for x in val:
-    if x % 5 == 0:
-        print("Buzz")
-    elif x % 3 == 0:
-        print("Fizz")
+# a = int(input("Введите число 1:"))
+# b = int(input("Введите число 2:"))
+# val = range(a, b+1)
+# for x in val:
+#     if x // 5 == 0:
+#         print("Buzz")
+#     elif x // 3 == 0:
+#         print("Fizz")
+# for x in val:
+#     if x // 3 == 0 and x // 5 == 0:
+#         print ("Fizz Buzz")
+# for x in val:
+#     if x % 3 == 0 and x % 5 == 0:
+#         print (x)
+
+
