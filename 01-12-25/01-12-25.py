@@ -4,7 +4,7 @@
 #     print("drown out your own inner voice.“")
 #     print("                                Steve Jobs")
 # jobs()
-from tabnanny import check
+# from tabnanny import check
 
 
 #2
@@ -43,4 +43,27 @@ from tabnanny import check
 #
 # a = numbers(10,222)
 # print(a)
+
+#6
+# def is_prime (x):
+#     if x // x == 1 and x // 1 == x:
+#         return ("True")
+#     else: return ("False")
+#
+# x = int(input("Число: "))
+# print(is_prime (x))
+
+#7
+# number= int(input("Введите число: "))
+# if number >= 100000 and number <= 999999:
+#     # print((number % 10))
+#     # print(((number // 10) % 10))
+#     # print(((number // 100) % 10))
+#     # print(((number // 1000) % 10))
+#     # print(((number // 10000) % 10))
+#     # print((number //  100000 % 10))
+#     if ((number % 10)) + ((number // 10) % 10) + ((number // 100) % 10) == ((number // 1000) % 10) + ((number // 10000) % 10) + ((number // 100000 % 10)):
+#         print("Счастливое число")
+#     else:
+#         print ("Несчастливое число")
 
