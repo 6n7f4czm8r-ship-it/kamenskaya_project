@@ -18,4 +18,32 @@
 # y = int(input("Второе число: "))
 # numb(x, y)
 
-#3
+#4
+# def cycle(a,b,c,d,e):
+#     x = min(a,b,c,d,e)
+#     print(x)
+#     return x
+#
+# a = int(input("Первое число: "))
+# b = int(input("Второе число: "))
+# c = int(input("Третье число: "))
+# d = int(input("Четвертое число: "))
+# e = int(input("Пятое число: "))
+# cycle(a,b,c,d,e)
+
+# 5
+# def numbers(a,b):
+#     if a == b:
+#         print("Error")
+#     if a > b:
+#         a, b = b, a
+#     rez = 1
+#     for i in range (a,b+1):
+#         rez *= i
+#         print(rez)
+#
+# # a = int(input("Первое число: "))
+# # b = int(input("Второе число: "))
+# print(("произведение = "), numbers(a = int(input("Первое число: ")), b = int(input("Второе число: "))))
+
+
