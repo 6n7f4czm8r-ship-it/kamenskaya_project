@@ -6,6 +6,7 @@
 #
 # text()
 
+
 #2
 # def numb (x,y):
 #     z = []
@@ -46,4 +47,15 @@
 # # b = int(input("Второе число: "))
 # print(("произведение = "), numbers(a = int(input("Первое число: ")), b = int(input("Второе число: "))))
 
+# 6
+count = 0
+def my_number(x):
+    for i in range(len(my_number(x))):
+        if my_number(x) >= 0:
+            count += 1
+        print(count)
+        return (count)
 
+x = int(input("Число: "))
+my_number(x)
+# print("Количесво символов в числе", my_number(x), "=", count)
