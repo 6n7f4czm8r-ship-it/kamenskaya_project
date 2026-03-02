@@ -4,3 +4,4 @@ def calc():
     return val
 
 calc()
+print(calc())
