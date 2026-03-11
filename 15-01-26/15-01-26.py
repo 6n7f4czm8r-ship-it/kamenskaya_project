@@ -34,23 +34,23 @@
 # cycle(a,b,c,d,e)
 
 # 5
-def numbers(a,b):
-    rez = 1
-    if a == b:
-        print("Error")
-    if a > b:
-        for i in range(b, a + 1):
-            rez *= i
-            print(rez)
-    else:
-        for i in range (a,b+1):
-            rez *= i
-            print(rez)
-    return rez
-
-a = int(input("Первое число: "))
-b = int(input("Второе число: "))
-print(numbers(a,b))
+# def numbers(a,b):
+#     rez = 1
+#     if a == b:
+#         print("Error")
+#     if a > b:
+#         for i in range(b, a + 1):
+#             rez *= i
+#             print(rez)
+#     else:
+#         for i in range (a,b+1):
+#             rez *= i
+#             print(rez)
+#     return rez
+#
+# a = int(input("Первое число: "))
+# b = int(input("Второе число: "))
+# print(numbers(a,b))
 
 # 6
 # count = 0
@@ -66,3 +66,29 @@ print(numbers(a,b))
 # x = int(input("Число: "))
 # my_number(x)
 # print("Количесво символов в числе", my_number(x), "=", count)
+
+
+# def sum(start_arg: int = 2, end_arg: int = 1):
+#     c = start_arg + end_arg
+#     print (c)
+#
+# sum(start_arg=5, end_arg=3)
+
+#7
+def palliandrom(a:int = 123321):
+    x = a // 1000
+    y = a % 1000
+    z = ""
+    for i in str (y) [::-1]:
+        z += i
+    print(z)
+
+    if x == int (z):
+        print("паллиандром")
+    else:
+        print("не паллиандром")
+
+print(palliandrom())
+
+
+
