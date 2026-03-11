@@ -75,20 +75,20 @@
 # sum(start_arg=5, end_arg=3)
 
 #7
-def palliandrom(a:int = 123321):
-    x = a // 1000
-    y = a % 1000
-    z = ""
-    for i in str (y) [::-1]:
-        z += i
-    print(z)
-
-    if x == int (z):
-        print("паллиандром")
-    else:
-        print("не паллиандром")
-
-print(palliandrom())
-
+# def palliandrom(a:int = 123321):
+#     x = a // 1000
+#     y = a % 1000
+#     z = ""
+#     for i in str (y) [::-1]:
+#         z += i
+#     print(z)
+#
+#     if x == int (z):
+#         print("паллиандром")
+#     else:
+#         print("не паллиандром")
+#
+# print(palliandrom())
+#
 
 
