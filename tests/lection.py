@@ -1,61 +1,60 @@
-# Задание 1.
-# x = int(input("Число: "))
-# if x % 2 == 0:
-#     print("Even number")
-# else:
-#     print("Odd number")
+import pygame
 
-# Задание 2.
-# x = int(input("Число: "))
-#
-# if x % 7 == 0:
-#      print("Number is multiple 7")
-# else:
-#      print("Number is not multiple 7")
+# Инициализация
+pygame.init()
+pygame.mixer.init()  # Инициализируем звук
 
-# Задание 3.
-# x = int(input("Число_1: "))
-# y = int(input("Число_2: "))
+# Загрузка и запуск музыки
+# Файл должен лежать в папке с кодом
+try:
+    pygame.mixer.music.load('music.mp3')
+    pygame.mixer.music.play(-1)  # -1 означает бесконечный повтор
+except:
+    print("Файл music.mp3 не найден!")
 
-# if x > y == 0:
-#      print("x")
-# else:
-#     print("y")
+screen = pygame.display.set_mode((800, 400))
+clock = pygame.time.Clock()
 
-# Задание 4.
-# x = int(input("Число_1: "))
-# y = int(input("Число_2: "))
-# if x > y == 0:
-#     print("y")
-# else:
-#     print("x")
+# Параметры игрока и препятствий (как в предыдущем примере)
+player_rect = pygame.Rect(100, 310, 40, 40)
+gravity = 0
+is_jumping = False
+obstacle = pygame.Rect(600, 310, 40, 40)
+speed = 5
 
-# a = 123456 % 10
-# print(a)
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE and not is_jumping:
+                gravity = -15
+                is_jumping = True
 
-# a = 123456 // 10 % 10
-# print(a)
+    # Гравитация и движение
+    gravity += 1
+    player_rect.y += gravity
+    if player_rect.bottom >= 350:
+        player_rect.bottom = 350
+        is_jumping = False
 
-# a = 123456 % 10 // 2
-# print(a)
+    obstacle.x -= speed
+    if obstacle.x < -40:
+        obstacle.x = 800
 
-# test
+    if player_rect.colliderect(obstacle):
+        pygame.mixer.music.stop()  # Остановить музыку при проигрыше
+        print("Игра окончена!")
+        running = False
 
-# x = int(input("Число: "))
-# counter = 1
-# while counter != x+1:
-#     print(counter)
-#     counter=counter + 1
+    # Отрисовка
+    screen.fill((30, 30, 30))
+    pygame.draw.rect(screen, (0, 200, 255), player_rect)
+    pygame.draw.rect(screen, (255, 50, 50), obstacle)
+    pygame.draw.line(screen, (255, 255, 255), (0, 350), (800, 350))
 
-# x = int(input("Число: "))
-# for x in range(1, x+1):
-#     print(x)
+    pygame.display.flip()
+    clock.tick(60)
 
-# x = int(input("Число: "))
-# counter = 1
-# while counter != x+1:
-#     print(1 + counter)
-#     counter=counter + 1
-
-# x = int(input("Число_1: "))
-# y = int(input("Число_2: "))
+pygame.quit()
